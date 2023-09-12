@@ -8,16 +8,36 @@
 .bold {
 	font-weight: 600;
 }
+.container {
+	max-width: 1300px;
+	padding: 0 80px;
+	margin: auto;
+}
+.max-width {
+	max-width: 1300px;
+	padding: 0 80px;
+	margin: auto;
+}
+.about-me .about,
+.services .services-content,
+.my-skills .skills,
+.my-teams .container,
+.contact .container {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
 /* navbar */
 .navbar {
 	width: 100%;
-	padding: 40px 0;
+	padding: 30px 0;
 	position: fixed;
 	z-index: 10;
 }
-.navbar .container {
+.navbar .max-width {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: center;
 }
 .navbar .logo a {
@@ -41,7 +61,7 @@
 	color: white;
 	font-size: 18px;
 	font-weight: bold;
-	margin-left: 50px;
+	margin-left: 25px;
 }
 .navbar .list li a:hover {
 	color: crimson;
@@ -59,12 +79,12 @@
 	display: flex;
 }
 /* details section */
-.home .container {
+.home .max-width {
 	display: flex;
 	width: 100%;
-	justify-content: center;
+	/* justify-content: center;
 	align-items: center;
-	/* margin-left: 300px; */
+	flex-wrap: wrap; */
 }
 .home .content .text-1 {
 	font-size: 27px;
@@ -122,15 +142,15 @@
 	border-radius: 7px;
 }
 .about-me .about .left {
-	width: 40%;
+	width: 45%;
 }
 .about-me .about .right {
-	width: 60%;
+	width: 55%;
 }
 .about-me .about .right .title {
 	font-size: 25px;
 	font-weight: bold;
-	margin-bottom: 20px;
+	margin: 20px;
 }
 .about-me .about .right .title span {
 	color: crimson;
@@ -156,15 +176,7 @@
 .about-me .about .right a:hover {
 	color: crimson;
 	background: none;
-	/* transition-duration: 0.3s; */
 }
-/* 
-.max-width{
-    max-width: 1300px;
-    padding: 0 80px;
-    margin: auto;
-}
-*/
 /* Services section */
 .services {
 	background-color: #000;
@@ -317,7 +329,7 @@
 .my-teams .card {
 	background-color: #222;
 	margin: 15px;
-	width: 25%;
+	width: 30%;
 	border-radius: 7px;
 	transition: all 0.4s ease;
 }
@@ -356,7 +368,8 @@
 /* contact section styling */
 .contact {
 	width: 100vw;
-	margin-bottom: 100px;
+	padding-bottom: 50px;
+	/* margin-bottom: 100px; */
 }
 .contact .title {
 	text-align: center;
@@ -471,4 +484,17 @@ footer {
 }
 .footer span:hover {
 	text-decoration: underline;
+}
+
+/* media queries */
+@media (max-width: 1280px) {
+	.about,
+	.services-content,
+	.skills,
+	.my-teams .container,
+	.contact .container {
+		flex-direction: column;
+		flex: 100%;
+		flex-wrap: wrap;
+	}
 }

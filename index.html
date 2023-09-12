@@ -14,17 +14,17 @@
 					<a href="#">Portfo<span>lio.</span></a>
 				</div>
 				<ul class="list">
-					<li><a href="#">Home</a></li>
-					<li><a href="#">About</a></li>
-					<li><a href="#">Services</a></li>
-					<li><a href="#">Skills</a></li>
-					<li><a href="#">Teams</a></li>
-					<li><a href="#">Contact</a></li>
+					<li><a href="#home">Home</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#services">Services</a></li>
+					<li><a href="#skills">Skills</a></li>
+					<li><a href="#teams">Teams</a></li>
+					<li><a href="#contact">Contact</a></li>
 				</ul>
 			</div>
 		</nav>
 		<!-- home-page -->
-		<div class="home">
+		<div class="home" id="home">
 			<div class="container">
 				<div class="content">
 					<p class="text-1">Hello, my name is</p>
@@ -37,7 +37,7 @@
 			</div>
 		</div>
 		<!-- About me section -->
-		<section class="about-me">
+		<section class="about-me" id="about">
 			<h2 class="heading">About me</h2>
 			<div class="about">
 				<div class="left">
@@ -63,7 +63,7 @@
 			</div>
 		</section>
 		<!-- Services section -->
-		<section class="services">
+		<section class="services" id="services">
 			<h2 class="heading">My Services</h2>
 			<div class="services-content">
 				<div class="service">
@@ -89,8 +89,8 @@
 				</div>
 			</div>
 		</section>
-		<!-- Services section -->
-		<section class="my-skills">
+		<!-- Skills section -->
+		<section class="my-skills" id="skills">
 			<h2 class="title">My Skills</h2>
 			<div class="skills">
 				<div class="left">
@@ -155,5 +155,123 @@
 				</div>
 			</div>
 		</section>
+
+		<!-- My-Teams section -->
+		<section class="my-teams" id="teams">
+			<h2 class="title">My teams</h2>
+			<div class="container">
+				<div class="card">
+					<div class="box">
+						<img src="utils/profile-2.jpeg" alt="" />
+						<h3>some name</h3>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing
+							elit. Culpa, vitae.
+						</p>
+					</div>
+				</div>
+				<div class="card">
+					<div class="box">
+						<img src="utils/profile-3.jpeg" alt="" />
+						<h3>some name</h3>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing
+							elit. Culpa, vitae.
+						</p>
+					</div>
+				</div>
+				<div class="card">
+					<div class="box">
+						<img src="utils/profile-4.jpeg" alt="" />
+						<h3>some name</h3>
+						<p>
+							Lorem ipsum dolor sit amet consectetur adipisicing
+							elit. Culpa, vitae.
+						</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- contact section -->
+		<section class="contact" id="contact">
+			<h2 class="title">Contact me</h2>
+			<div class="container">
+				<div class="left">
+					<h3 class="heading">Get in touch</h3>
+					<p class="info">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit.
+						Dolorem magni neque aperiam dignissimos illum. Eius
+						cumque repellat a? Assumenda, fuga.
+					</p>
+					<div class="detail">
+						<img src="utils/icons/user.png" alt="" />
+						<div class="my-detail">
+							<p class="bold">Name</p>
+							<p>Ayush Bharadva</p>
+						</div>
+					</div>
+					<div class="detail">
+						<img src="utils/icons/location.png" alt="" />
+						<div class="my-detail">
+							<p class="bold">Address</p>
+							<p>Ahmedabad, Gujarat</p>
+						</div>
+					</div>
+					<div class="detail">
+						<img src="utils/icons/email.png" alt="" />
+						<div class="my-detail">
+							<p class="bold">Email</p>
+							<p>ayush@gmail.com</p>
+						</div>
+					</div>
+				</div>
+				<div class="right">
+					<h3 class="heading">Message me</h3>
+
+					<form action="#">
+						<div class="fields">
+							<div class="field name">
+								<input
+									type="text"
+									placeholder="Name"
+									required />
+							</div>
+							<div class="field email">
+								<input
+									type="email"
+									name=""
+									id=""
+									placeholder="email"
+									required />
+							</div>
+						</div>
+						<div class="field subject">
+							<input type="text" placeholder="Subject" required />
+						</div>
+						<div class="field message">
+							<textarea
+								name=""
+								id=""
+								cols="30"
+								rows="10"
+								placeholder="Message.."
+								required></textarea>
+						</div>
+						<div class="button">
+							<button type="submit">send message</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</section>
+
+		<!-- footer -->
+		<footer>
+			<p class="footer">
+				Created by <span>Ayush Bharadva</span> | &copy; 2023 All rights
+				reserved.
+			</p>
+		</footer>
 	</body>
 </html>
